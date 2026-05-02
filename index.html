@@ -1,29 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Projecto LTD2 - Portfólio Andreia</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About me</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Get in touch</a>
-        </nav>
-    </header>    <h1>
-        Home
-    </h1>
-    <p>
-        This is the content of the homepage.
-    </p>
-    <footer>
-        FBAUL // LTD2 // 2026
+    <title>Andreia Valdez – UX/UI Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!-- Navegação -->
+    <header class="header">
+        <div class="container nav">
+            <a href="#sobre" class="logo">Andreia Valdez</a>
+            <nav class="menu">
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">About</a>
+                <a href="#reach-out">Reach out</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero -->
+    <section id="sobre" class="section light">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="tag">Service & UX/UI Designer</span>
+                <h1>I've always been drawn to <b>solving problems</b>.</h1>
+                <p class="intro">
+                    It started with puzzles. It evolved into design. Today I work across film, public sector, and nonprofits — building services that are useful, clear, and authentic.
+                </p>
+                <p>Based in Lisbon, Portugal <a href="https://linkedin.com/in/andreiavaldez" target="_blank" class="linkedin">LinkedIn →</a></p>
+            </div>
+            <div class="hero-image">
+                <img src="img/AV_Foto.png" srcset="img/AV_Foto.png 1x,img/AV_Foto@2x.png 2x" alt="Foto de Andreia Valdez">
+            </div>
+        </div>
+    </section>
+    <!-- Secção de Trabalhos -->
+    <section id="trabalhos" class="section">
+        <div class="container">
+            <h2>Selected Work</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/projects/apd/cover.png" srcset="img/projects/apd/cover.png 1x,img/projects/apd/cover.png 2x" alt="Projeto Academia Portugal Digital">
+                    </div>
+                    <div class="project-content">
+                        <h3>Academia Portugal Digital</h3>
+                        <p>
+                            Empowering a nation to build digital skills through an accessible, personalised learning experience designed for everyone.
+                        </p>
+                        <p>
+                          <span class="chip">Public Sector</span>
+                          <span class="chip">Education</span>
+                          <span class="chip">Accessibility</span>
+                          <span class="chip">Digital Transformation</span>
+                        </p>
+                        <a href="#" target="_blank" rel="noopener" class="project-link">
+                            Read case study →
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/projects/apd/cover.png" srcset="img/projects/apd/cover.png 1x,img/projects/apd/cover.png 2x" alt="Projeto Academia Portugal Digital">
+                    </div>
+                    <div class="project-content">
+                        <h3>Academia Portugal Digital</h3>
+                        <p>
+                            Empowering a nation to build digital skills through an accessible, personalised learning experience designed for everyone.
+                        </p>
+                        <p>
+                          <span class="chip">Public Sector</span>
+                          <span class="chip">Education</span>
+                          <span class="chip">Accessibility</span>
+                          <span class="chip">Digital Transformation</span>
+                        </p>
+                        <a href="#" target="_blank" rel="noopener" class="project-link">
+                            Read case study →
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!-- Secção de Competências -->
+    <section class="section light">
+        <div class="container">
+            <div class="inline-heading">
+                <p class="tag">Skills</p>
+                <h2>Competências</h2>
+            </div>
+            <div class="skills">
+                <div>
+                    <h3>Design Visual</h3>
+                    <div class="pills">
+                        <span class="pill">Figma</span>
+                        <span class="pill">Adobe XD</span>
+                        <span class="pill">Sketch</span>
+                        <span class="pill">Adobe Illustrator</span>
+                        <span class="pill">Adobe Photoshop</span>
+                        <span class="pill">Framer</span>
+                        <span class="pill">Principle</span>
+                    </div>
+                </div>
+                <div>
+                    <h3>UX Research</h3>
+                    <div class="pills">
+                        <span class="pill">Testes de usabilidade</span>
+                        <span class="pill">Wireframes</span>
+                        <span class="pill">Protótipos</span>
+                    </div>
+                </div>
+                <div>
+                    <h3>Desenvolvimento</h3>
+                    <div class="pills">
+                        <span class="pill">HTML</span>
+                        <span class="pill">CSS</span>
+                    </div>
+                </div>
+                <div>
+                    <h3>Soft Skills</h3>
+                    <div class="pills">
+                        <span class="pill">Comunicação</span>
+                        <span class="pill">Trabalho em equipa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Secção de Formação e Experiência-->
+    <section class="section">
+        <div class="container">
+            <div class="inline-heading">
+                <p class="tag">Percurso</p>
+                <h2>Formação e Experiência</h2>
+            </div>
+            <div class="container timeline-grid">
+
+                <!-- Formação -->
+                <div class="timeline-column">
+                    <h2 class="timeline-title">Formação</h2>
+
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+
+                        <div class="timeline-content">
+                            <span class="timeline-date">2016 – 2018</span>
+                            <h3>Mestrado em Design de Comunicação</h3>
+                            <h4>Faculdade de Belas-Artes de Lisboa</h4>
+                            <p>
+                                Especialização em Design de Interação e Experiência do Utilizador.
+                                Dissertação sobre acessibilidade em interfaces digitais.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+
+                        <div class="timeline-content">
+                            <span class="timeline-date">2013 – 2016</span>
+                            <h3>Licenciatura em Design</h3>
+                            <h4>IADE – Creative University</h4>
+                            <p>
+                                Formação em design gráfico, tipografia e fundamentos de design de
+                                interfaces. Projeto final premiado no Young Creative Portugal.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+
+                        <div class="timeline-content">
+                            <span class="timeline-date">2022</span>
+                            <h3>Google UX Design Professional Certificate</h3>
+                            <h4>Google / Coursera</h4>
+                            <p>
+                                Certificação profissional em UX Design abrangendo todo o processo de
+                                design centrado no utilizador.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experiência -->
+                <div class="timeline-column">
+                    <h2 class="timeline-title">Experiência Profissional</h2>
+
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+
+                        <div class="timeline-content">
+                            <span class="timeline-date">2021 – Presente</span>
+                            <h3>Senior UX/UI Designer</h3>
+                            <h4>Talkdesk</h4>
+                            <p>
+                                Lidero a equipa de design do produto principal de contact center.
+                                Responsável pela estratégia de design, sistemas de componentes e
+                                mentoria de designers júnior.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+
+                        <div class="timeline-content">
+                            <span class="timeline-date">2019 – 2021</span>
+                            <h3>UX/UI Designer</h3>
+                            <h4>Farfetch</h4>
+                            <p>
+                                Design de experiências de e-commerce para a plataforma de luxo.
+                                Colaboração com equipas internacionais em projetos de checkout e
+                                descoberta de produtos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+
+                        <div class="timeline-content">
+                            <span class="timeline-date">2018 – 2019</span>
+                            <h3>Junior Designer</h3>
+                            <h4>Publicis Portugal</h4>
+                            <p>
+                                Início de carreira em agência de publicidade, trabalhando em
+                                campanhas digitais para marcas como Vodafone, Nestlé e TAP.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer id="contacto" class="footer-section">
+
+        <div class="container footer-content">
+
+            <span class="footer-sub-title">Vamos conversar</span>
+
+            <h2 class="footer-title">Tem um projeto em mente?</h2>
+            <div class="footer-text">
+                Estou sempre aberto a novos desafios e colaborações interessantes.
+                Entre em contacto e vamos criar algo incrível juntos.
+            </div>
+            <a href="mailto:hello@pedroporto.design" class="footer-email">
+                <span class="email-icon">✉️</span>
+                hello@pedroporto.design
+            </a>
+
+            <div class="footer-social">
+                <!-- LinkedIn -->
+                <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+                <!-- Dribbble -->
+                <a href="#" target="_blank" rel="noopener" aria-label="Dribbble">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M2 12h20" />
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10" />
+                        <path d="M12 2a15.3 15.3 0 0 0-4 10 15.3 15.3 0 0 0 4 10" />
+                    </svg>
+                </a>
+                <!-- Instagram -->
+                <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <rect x="2" y="2" width="20" height="20" rx="5" />
+                        <circle cx="12" cy="12" r="4" />
+                        <circle cx="17.5" cy="6.5" r="1.5" />
+                    </svg>
+                </a>
+                <!-- Email -->
+                <a href="mailto:hello@pedroporto.design" aria-label="Email">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                        <path d="M22 6L12 13 2 6" />
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <span>© 2026 Pedro Porto. Todos os direitos reservados.</span>
+            </div>
+        </div>
+
     </footer>
-    <script src="js/javascript.js"></script>
-  </body>
+
+</body>
+
 </html>
