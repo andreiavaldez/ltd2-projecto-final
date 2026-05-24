@@ -18,6 +18,55 @@ body {
     /* perto da recomendação mínima da W3C para altura das linhas nos sites (https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html) */
 }
 
+/*  Dark Mode */
+
+#theme-toggle {
+    border: 0px;
+    background: transparent;
+}
+
+#theme-toggle:hover {
+    cursor: pointer;
+}
+
+.dark-mode #theme-toggle {
+    border: 0px;
+    background: transparent;
+    color: #fff;
+}
+
+.dark-mode .section-light, .dark-mode .section {
+    background-color: #14181F;
+    color: #fff;
+}
+
+.dark-mode .project-content {
+    background-color: #14181F;
+
+    border: 1px solid #363636;
+}
+
+.dark-mode .chip {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.dark-mode .project-link {
+    color: #fff;
+}
+
+.dark-mode .header {
+    background-color: #14181F;
+}
+
+.dark-mode .header a {
+    color: #fff;
+}
+
+.dark-mode .button {
+    color: #fff;
+}
+
 h1,
 h2,
 h3 {
@@ -64,7 +113,7 @@ a {
     padding: 60px 0;
 }
 
-.section.light {
+.section-light {
     background-color: #F9F7F5;
 }
 
@@ -143,6 +192,14 @@ a {
     display: inline-block;
 }
 
+.button {
+    margin-top: 10px;
+    font-weight: 500;
+    text-decoration: underline;
+    font-size: 14px;
+    color: #000;
+}
+
 .hero-buttons {
     margin-top: 24px;
     display: flex;
@@ -202,7 +259,6 @@ a {
     background-color: #ffffff;
     border-radius: 16px;
     overflow: hidden;
-
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }

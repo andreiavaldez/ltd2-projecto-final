@@ -13,17 +13,20 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body><!-- Navegação -->
-    <header class="header">
-        <div class="container nav">
-            <a href="index.html" class="logo">Andreia Valdez</a>
-            <nav class="menu">
-                <a href="index.html">Home</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="about.html">About</a>
-                <a href="reach-out.html">Reach out</a>
-            </nav>
-        </div>
-    </header><!-- Portfólio -->
+<header class="header">
+    <div class="container nav">
+        <a href="index.html" class="logo">Andreia Valdez</a>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About</a>
+            <a href="reach-out.html">Reach out</a>
+            <button id="theme-toggle">
+                Change Mode
+            </button>
+        </nav>
+    </div>
+</header><!-- Portfólio -->
 <section class="section">
     <div class="container">
         <div class="inline-heading">
@@ -47,7 +50,7 @@
             <span class="chip">Accessibility</span>
             <span class="chip">Digital Transformation</span>
         </p>
-        <a href="#" target="_blank" rel="noopener" class="project-link">
+        <a href="project-apd-detail.html" target="_blank" rel="noopener" class="project-link">
             Read case study →
         </a>
     </div>
@@ -124,5 +127,21 @@
             </div>
         </div>
     </footer>
+<script>
+    const button = document.getElementById('theme-toggle');
+    // Carrega tema guardado
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+    }
+    button.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        // Guarda estado
+        if (document.body.classList.contains('dark-mode')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
+    });
+</script>
 </body>
 </html>
