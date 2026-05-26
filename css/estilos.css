@@ -353,6 +353,12 @@ a {
     color: #fff;
 }
 
+/* Reach Out */
+
+.reach-out {
+    min-height: calc(100vh - 360px);
+}
+
 /* Timeline */
 
 .timeline-section {
