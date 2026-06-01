@@ -102,6 +102,115 @@ a {
     text-decoration: none;
 }
 
+/* Breadcrumbs */
+
+.breadcrumbs {
+    margin-bottom: 32px;
+}
+
+.breadcrumbs a {
+    color: #666F7E;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.breadcrumbs a:hover {
+    color: #ABBD2D;
+    text-decoration: underline;
+}
+
+.dark-mode .breadcrumbs a {
+    color: #fff;
+}
+
+.dark-mode .breadcrumbs a:hover {
+    color: #ABBD2D;
+}
+
+/* Next Project Link */
+
+.next-project {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.next-project-label {
+    font-size: 14px;
+    color: #666F7E;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    margin-bottom: 16px;
+}
+
+.next-project-link {
+    font-size: 24px;
+    font-family: "Playfair Display", serif;
+    color: #1f2933;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.next-project-link:hover {
+    color: #ABBD2D;
+    text-decoration: underline;
+}
+
+.dark-mode .next-project-label {
+    color: #fff;
+}
+
+.dark-mode .next-project-link {
+    color: #fff;
+}
+
+.dark-mode .next-project-link:hover {
+    color: #ABBD2D;
+}
+
+/* KPI Grid */
+
+.kpi-grid {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.kpi-box {
+    padding: 40px 24px;
+    background-color: #e2e2dc;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.dark-mode .kpi-box {
+    background-color: #666F7E;
+}
+
+.kpi-number {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.kpi-label {
+    color: #666F7E;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.dark-mode .kpi-label {
+    color: #F9F7F5;
+}
+
+@media (max-width: 767px) {
+    .kpi-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Projects */
 
 .project-meta {
@@ -227,6 +336,13 @@ a {
     gap: 32px;
 }
 
+/* Before & After - imagens lado a lado 50/50 */
+#before-after .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
 /* Imagem com destaque */
 
 .highlight-image {
@@ -243,6 +359,21 @@ a {
         flex-direction: column;
         gap: 16px;
     }
+
+}
+
+/* Wireframe mobile - manter tamanho real da imagem */
+#wireframes .wireframe-section:nth-child(2) img {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Design system segunda imagem - manter tamanho real */
+#design-system .project-grid img:nth-child(2) {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .page-nav {
