@@ -946,3 +946,120 @@ a {
         gap: 4rem;
     }
 }
+
+
+/* ========================================
+   MENU MOBILE - HAMBURGER
+   ======================================== */
+
+/* Esconder hamburger por padrão (desktop) */
+.mobile-menu-toggle {
+    display: none;
+}
+
+/* Media Query para tablets e mobile */
+@media (max-width: 768px) {
+    
+    /* Mostrar botão hamburger */
+    .mobile-menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+    
+    .mobile-menu-toggle span {
+        width: 25px;
+        height: 3px;
+        background-color: #1f2933;
+        transition: all 0.3s ease;
+    }
+    
+    .dark-mode .mobile-menu-toggle span {
+        background-color: #fff;
+    }
+    
+    /* Animação do X quando menu está aberto */
+    .mobile-menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+    
+    .mobile-menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+    
+    /* Menu escondido por padrão */
+    .menu {
+        position: fixed;
+        top: 3.25rem;
+        left: 0;
+        right: 0;
+        background-color: #F9F7F5;
+        flex-direction: column;
+        gap: 0;
+        align-items: stretch;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .dark-mode .menu {
+        background-color: #14181F;
+    }
+    
+    /* Menu aberto */
+    .menu.active {
+        max-height: 400px;
+    }
+    
+    /* Itens do menu */
+    .menu a,
+    .menu #theme-toggle {
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        text-align: left;
+        width: 100%;
+    }
+    
+    .dark-mode .menu a,
+    .dark-mode .menu #theme-toggle {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .menu a:last-of-type {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Dark Mode button no menu mobile */
+    .menu #theme-toggle {
+        display: block;
+        background: none;
+        text-align: left;
+        font-size: 0.875rem;
+        color: #000;
+    }
+    
+    .dark-mode .menu #theme-toggle {
+        color: #fff;
+    }
+}
+
+/* Ajustes específicos para 320px */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 2.25rem;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+}

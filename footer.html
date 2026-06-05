@@ -28,6 +28,31 @@
     function CV() {
         alert("I hope we get to work together soon! :-)");
     }
+
+    // Menu Mobile Toggle
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            mobileMenuToggle.classList.toggle('active');
+
+            // Atualizar aria-expanded
+            const isExpanded = menu.classList.contains('active');
+            mobileMenuToggle.setAttribute('aria-expanded', isExpanded);
+        });
+
+        // Fechar menu ao clicar num link
+        const menuLinks = menu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+                mobileMenuToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
 </script>
 </body>
 
