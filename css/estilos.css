@@ -41,13 +41,12 @@ body {
 }
 
 .dark-mode .project-content {
-    background-color: #14181F;
-
-    border: 0.063rem solid #363636;
+    background-color: #131313;
+    border: none;
 }
 
 .dark-mode .chip {
-    border: 0.063rem solid #fff;
+    border: 1px solid #fff;
     color: #fff;
 }
 
@@ -554,12 +553,12 @@ a {
 }
 
 .secondary {
-    border: 0.063rem solid #E5E7EB;
+    border: 1px solid #E5E7EB;
     color: #000
 }
 
 .secondary:hover {
-    border: 0.063rem solid #E5E7EB;
+    border: 1px solid #E5E7EB;
     background: #E5E7EB;
 }
 
@@ -576,6 +575,10 @@ a {
     overflow: hidden;
     box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.08);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.dark-mode .project-card {
+    background-color: #131313;
 }
 
 .project-card:hover {
@@ -604,6 +607,7 @@ a {
 /* Conteúdo */
 .project-content {
     padding: 1rem;
+
 }
 
 .project-content p {

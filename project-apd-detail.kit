@@ -1,12 +1,18 @@
 <!-- @import "header.html" -->
 <!-- @import "navigation.html" -->
-<!-- Project 01 -->
+
+<!-- Cabeçalho do Projeto -->
 <section class="section">
     <div class="container">
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="portfolio.html">← Back to Portfolio</a>
+        </nav>
+
         <div class="inline-heading">
             <h2>Academia Portugal Digital</h2>
         </div>
-        <img src="img/projects/apd/cover.png" srcset="img/projects/apd/cover.png 1x,img/projects/apd/cover.png 2x"
+        <img src="img/projects/apd/cover.png" srcset="img/projects/apd/cover.png 1x, img/projects/apd/cover@2x.png 2x"
                 alt="Projeto Academia Portugal Digital">
         <div>
             <div class="project-meta">
@@ -19,11 +25,15 @@
                 <span class="chip">Accessibility</span>
                 <span class="chip">Digital Transformation</span>
             </p>
+            <a href="https://academiaportugaldigital.pt/" target="_blank" rel="noopener noreferrer" class="btn primary" style="display: inline-block; margin-top: 16px;">
+                View Live Site →
+            </a>
             </div>
         </div>
         <nav class="page-nav" aria-label="On this page">
-            <p>Jump to</p>
+            <p><strong>Jump to</strong></p>
             <ul>
+                <li><a href="#overview">▪ Overview</a></li>
                 <li><a href="#goals">▪ Goals</a></li>
                 <li><a href="#process">▪ Process</a></li>
                 <li><a href="#wireframes">▪ Wireframes</a></li>
@@ -35,4 +45,238 @@
         </nav>
     </div>
 </section>
+
+<!-- Secção Overview -->
+<section class="section-light" id="overview">
+    <div class="container">
+        <h2>Overview</h2>
+        <p class="project-intro">
+            Academia Portugal Digital is a national initiative designed to democratise digital learning across Portugal.
+            As part of a government-led digital transformation programme, the platform aims to equip citizens of all ages
+            and backgrounds with essential digital skills — from basic computer literacy to advanced technology competencies.
+        </p>
+        <p class="project-intro">
+            The project involved redesigning the entire user experience to create an accessible, inclusive, and engaging
+            learning environment that serves thousands of Portuguese citizens seeking to improve their digital competencies.
+        </p>
+    </div>
+</section>
+
+<!-- Secção Objetivos -->
+<section class="section" id="goals">
+    <div class="container">
+        <h2>Goals</h2>
+        <div class="project-grid">
+            <div class="project-card-box">
+                <h3>Make Digital Education Accessible</h3>
+                <p>
+                    Design an inclusive platform that accommodates users with varying levels of digital literacy,
+                    ages, and abilities while meeting WCAG accessibility standards.
+                </p>
+            </div>
+            <div class="project-card-box">
+                <h3>Personalise the Learning Experience</h3>
+                <p>
+                    Create pathways that adapt to individual learning goals, skill levels, and interests to
+                    keep learners engaged and motivated throughout their journey.
+                </p>
+            </div>
+            <div class="project-card-box">
+                <h3>Drive National Digital Transformation</h3>
+                <p>
+                    Support Portugal's digital agenda by providing tools and resources that empower citizens
+                    to participate fully in the digital economy and society.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Secção Processo -->
+<section class="section-light" id="process">
+    <div class="container">
+        <h2>Process</h2>
+        <div class="project-grid">
+            <div class="process-steps">
+                <div class="process-item">
+                    <div class="process-number">1</div>
+                    <div class="process-content">
+                        <h3>Research & Discovery</h3>
+                        <p>
+                            Conducted extensive user research with diverse demographic groups to understand barriers
+                            to digital learning, including interviews with seniors, rural community members, and people
+                            with accessibility needs.
+                        </p>
+                    </div>
+                </div>
+                <div class="process-item">
+                    <div class="process-number">2</div>
+                    <div class="process-content">
+                        <h3>Information Architecture</h3>
+                        <p>
+                            Reorganised content structure to create clear learning paths, simplified navigation,
+                            and intuitive course discovery mechanisms that work for users with limited digital experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="process-item">
+                    <div class="process-number">3</div>
+                    <div class="process-content">
+                        <h3>Wireframing & Prototyping</h3>
+                        <p>
+                            Created low and high-fidelity wireframes, tested with representative users,
+                            and iterated based on feedback to ensure the design met real user needs.
+                        </p>
+                    </div>
+                </div>
+                <div class="process-item">
+                    <div class="process-number">4</div>
+                    <div class="process-content">
+                        <h3>Visual Design & Design System</h3>
+                        <p>
+                            Developed a comprehensive design system with accessible colour palettes, clear typography,
+                            and reusable components that ensure consistency across the platform.
+                        </p>
+                    </div>
+                </div>
+                <div class="process-item">
+                    <div class="process-number">5</div>
+                    <div class="process-content">
+                        <h3>Testing & Iteration</h3>
+                        <p>
+                            Conducted usability testing sessions with diverse user groups, including accessibility
+                            audits, and refined the design based on findings to optimise the user experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Secção Wireframes -->
+<section class="section" id="wireframes">
+    <div class="container">
+        <h2>Wireframes</h2>
+        <p class="project-intro-centered">
+            Early wireframes focused on simplifying the user journey and creating clear visual hierarchy
+            for users with varying levels of digital literacy.
+        </p>
+        <div class="project-grid">
+            <div class="wireframe-section">
+                <h3>Desktop Wireframes</h3>
+                <img src="img/projects/apd/wireframe-desktop.png"
+                     srcset="img/projects/apd/wireframe-desktop.png 1x, img/projects/apd/wireframe-desktop@2x.png 2x"
+                     alt="Desktop wireframes for Academia Portugal Digital">
+            </div>
+            <div class="wireframe-section">
+                <h3>Mobile Wireframes</h3>
+                <img src="img/projects/apd/wireframe-mobile.png"
+                     srcset="img/projects/apd/wireframe-mobile.png 1x, img/projects/apd/wireframe-mobile@2x.png 2x"
+                     alt="Mobile wireframes for Academia Portugal Digital">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Secção Sistema de Design -->
+<section class="section-light" id="design-system">
+    <div class="container">
+        <h2>Design System</h2>
+        <p class="project-intro-centered">
+            A comprehensive design system was created to ensure consistency, accessibility, and scalability
+            across the entire platform.
+        </p>
+        <div class="project-grid">
+            <img src="img/projects/apd/design-system.png"
+                 srcset="img/projects/apd/design-system.png 1x, img/projects/apd/design-system@2x.png 2x"
+                 alt="Design system components and guidelines">
+            <img src="img/projects/apd/design-system-2.png"
+                 srcset="img/projects/apd/design-system-2.png 1x, img/projects/apd/design-system-2@2x.png 2x"
+                 alt="Design system colour palette and typography">
+        </div>
+    </div>
+</section>
+
+<!-- Secção Antes & Depois -->
+<section class="section" id="before-after">
+    <div class="container">
+        <h2>Before & After</h2>
+        <p class="project-intro-centered">
+            A side-by-side comparison showing the transformation from the old interface to the new,
+            accessible, and user-friendly design.
+        </p>
+        <div class="project-grid">
+            <div class="wireframe-section">
+                <h3 class="before-label">Before</h3>
+                <img src="img/projects/apd/before.png"
+                     srcset="img/projects/apd/before.png 1x, img/projects/apd/before@2x.png 2x"
+                     alt="Academia Portugal Digital interface before redesign">
+            </div>
+            <div class="wireframe-section">
+                <h3 class="after-label">After</h3>
+                <img src="img/projects/apd/after.png"
+                     srcset="img/projects/apd/after.png 1x, img/projects/apd/after@2x.png 2x"
+                     alt="Academia Portugal Digital interface after redesign">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Secção Ecrãs Finais -->
+<section class="section-light" id="screens">
+    <div class="container">
+        <h2>Final Screens</h2>
+        <p class="project-intro-centered">
+            The final high-fidelity designs showcase a clean, modern interface that prioritises usability
+            and accessibility for all users.
+        </p>
+        <div class="project-grid">
+            <img src="img/projects/apd/screen-1.png"
+                 srcset="img/projects/apd/screen-1.png 1x, img/projects/apd/screen-1@2x.png 2x"
+                 alt="Academia Portugal Digital final screen 1">
+            <img src="img/projects/apd/screen-2.png"
+                 srcset="img/projects/apd/screen-2.png 1x, img/projects/apd/screen-2@2x.png 2x"
+                 alt="Academia Portugal Digital final screen 2">
+            <img src="img/projects/apd/screen-3.png"
+                 srcset="img/projects/apd/screen-3.png 1x, img/projects/apd/screen-3@2x.png 2x"
+                 alt="Academia Portugal Digital final screen 3">
+        </div>
+    </div>
+</section>
+
+<!-- Secção Impacto -->
+<section class="section" id="impact">
+    <div class="container">
+        <h2>Impact</h2>
+        <p class="project-intro-centered">
+            At scale, for real people.
+        </p>
+        <div class="kpi-grid">
+            <div class="kpi-box">
+                <h3 class="kpi-number">1M+</h3>
+                <p class="kpi-label">Skills assessments completed</p>
+            </div>
+            <div class="kpi-box">
+                <h3 class="kpi-number">120+</h3>
+                <p class="kpi-label">MOOCs produced and hosted</p>
+            </div>
+            <div class="kpi-box">
+                <h3 class="kpi-number">50K+</h3>
+                <p class="kpi-label">Certifications issued</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Link para próximo projeto -->
+<section class="section-light">
+    <div class="container">
+        <div class="next-project">
+            <p class="next-project-label">Next Project</p>
+            <a href="project-brainstorm-detail.html" class="next-project-link">Brainstorm PHDA →</a>
+        </div>
+    </div>
+</section>
+
 <!-- @import "footer.html" -->
